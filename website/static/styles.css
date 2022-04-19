@@ -483,3 +483,31 @@ img.RShoulderBNWBack:hover{
     padding-bottom: 60px;
     padding-left: 0px;
 }
+
+.theme_canvas {
+    width: 87%;
+    margin: 0 auto;
+}
+
+.title_bar .page_title {
+    font-size: 2.3em;
+    margin: 0;
+}
+
+.commandments{
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.separator {
+    left: 50%;
+    margin-left: -15px;
+}
+
+h1 {
+    text-align: center;
+}

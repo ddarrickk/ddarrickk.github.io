@@ -516,3 +516,13 @@ h1 {
     line-height: 1.1rem;
     font-size: 1rem;
 }
+
+.atlas{
+    position:relative ;
+    bottom:-10px;
+    width:100%;
+  }
+  img{
+  text-align:center;
+  display:block;
+  }

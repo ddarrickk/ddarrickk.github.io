@@ -501,6 +501,8 @@ img.RShoulderBNWBack:hover{
     margin-bottom: 15px;
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
 }
 
 .separator {
@@ -527,5 +529,41 @@ h1 {
   display:block;
   }
 
+.page_subtitle{
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.specificMuscles {
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-left: 70px;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.exercises{
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-left: 70px;
+}
+.exerciseSteps{
+    line-height: 1.2;
+    margin-top: 3px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-left: 70px;
+    width: 20rem;
+    font-size: x-small;
+}
 
   

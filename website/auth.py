@@ -71,3 +71,7 @@ def body():
 @auth.route('/about', methods=['GET', 'POST'])
 def about():
     return render_template("about.html", user=current_user)
+
+@auth.route('/arms', methods=['GET'])
+def arms():
+    return render_template("/bodyParts/arms.html", user=current_user)

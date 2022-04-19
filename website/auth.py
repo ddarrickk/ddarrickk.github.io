@@ -34,14 +34,6 @@ def logout():
     logout_user()
     return redirect(url_for('auth.login'))
 
-@auth.route('/body', methods=['GET', 'POST'])
-def body():
-    return render_template("body.html", user=current_user)
-
-@auth.route('/about', methods=['GET', 'POST'])
-def about():
-    return render_template("about.html", user=current_user)
-
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     if request.method == 'POST':
@@ -71,3 +63,11 @@ def sign_up():
             return redirect(url_for('views.notes'))
 
     return render_template("sign_up.html", user=current_user)
+
+@auth.route('/body', methods=['GET', 'POST'])
+def body():
+    return render_template("body.html", user=current_user)
+
+@auth.route('/about', methods=['GET', 'POST'])
+def about():
+    return render_template("about.html", user=current_user)

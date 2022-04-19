@@ -405,9 +405,6 @@ img.RShoulderBNWBack:hover{
     }
 }
 
-
-
-
 /* SIGNUP/LOGIN CSS */
 /* SIGNUP/LOGIN CSS */
 /* SIGNUP/LOGIN CSS */
@@ -464,4 +461,25 @@ img.RShoulderBNWBack:hover{
 
 .LoginButton {
     padding-bottom: 28rem;
+}
+
+/* ABOUT CSS */
+/* ABOUT CSS */
+/* ABOUT CSS */
+
+.title_bar {
+    background-image: initial;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(42, 42, 42);
+    background-size: cover;
+    color: #FFF;
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+    padding-left: 0px;
 }

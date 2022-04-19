@@ -8,7 +8,7 @@
   <link rel="stylesheet" type= "text/css" href="/static/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link href="https://www.dafontfree.net/embed/YmVybmFyZC1tdC1jb25kZW5zZWQtcmVndWxhciZkYXRhLzEzL2IvNjQ0NzkvQkVSTkhDLlRURg" rel="stylesheet" type="text/css"/>
-  <title>{% block title %}Home{% endblock %}</title>
+  <title>{% block title %}Notes{% endblock %}</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <ul class="nav-links">
       {% if user.is_authenticated %}
           <li>
-            <a id="home" href="/">Home</a>
+            <a id="notes" href="/">Notes</a>
           </li>
           <li>
             <a id="logout" href="/logout">Logout</a>
@@ -25,6 +25,9 @@
       {% else %}
           <li>
             <a id="body" href="/body">Body</a>
+          </li>
+          <li>
+            <a id="about" href="/about">About</a>
           </li>
           <li>
             <a id="login" href="/login">Login</a>

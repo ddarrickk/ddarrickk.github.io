@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<div class="form-container">
+  <div class="loginregister">
+    <form>
+      <fieldset>
+        <legend>Login</legend>
+        <div class="form-group">
+          <label class="field" for="email">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <!-- <br><br> -->
+        <div class="form-group">
+          <label class="field" for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <a href="sign-up"><button class="btn" type="button">Register</button></a>
+        <button class="btn" type="submit">Login</button>
+      </fieldset>
+    </body>
+    </form>
+  </div>  
+</div>  
+{% endblock %}

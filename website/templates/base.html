@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type= "text/css" href="/static/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://www.dafontfree.net/embed/YmVybmFyZC1tdC1jb25kZW5zZWQtcmVndWxhciZkYXRhLzEzL2IvNjQ0NzkvQkVSTkhDLlRURg" rel="stylesheet" type="text/css"/>
+  <title>{% block title %}Home{% endblock %}</title>
+</head>
+
+<body>
+  <nav>
+      <img class="logoImg" src="/static/strengthLogo.png">
+      <ul class="nav-links">
+      {% if user.is_authenticated %}
+          <li>
+            <a id="home" href="/">Home</a>
+          </li>
+          <li>
+            <a id="logout" href="/logout">Logout</a>
+          </li>
+      {% else %}
+          <li>
+            <a id="body" href="/body">Body</a>
+          </li>
+          <li>
+            <a id="login" href="/login">Login</a>
+          </li>
+
+      {% endif %}
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+  
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %} 
+    {% for message in messages %} 
+      <div>
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div>
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    {% endfor %} 
+  {% endif %} 
+  {% endwith %}
+
+  <script src="app.js"></script>
+  <div class="container">{% block content %} {% endblock %}</div>
+  <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='index.js') }}"
+  ></script>
+  <script src="/static/app.js"></script>
+</body>
+
+<footer>
+  <div class="footer-container" style="position:relative; top:1400px">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href="#">Leadership</a>
+            <a href="#">Team</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Contact</h2>
+            <a href="#">E-mail</a>
+            <a href="#">Phone</a>
+            <a href="#">Fax</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholer="Enter your email address" id="footer-email">
+            <input type="submit" value="Sign-Up" id="footer-email-btn">
+        </div>
+    </div>
+</div>
+</footer>
+</html>

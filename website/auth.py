@@ -72,6 +72,24 @@ def body():
 def about():
     return render_template("about.html", user=current_user)
 
+
+
+
 @auth.route('/arms', methods=['GET'])
 def arms():
     return render_template("/bodyParts/arms.html", user=current_user)
+@auth.route('/back', methods=['GET'])
+def back():
+    return render_template("/bodyParts/back.html", user=current_user)
+@auth.route('/chest', methods=['GET'])
+def chest():
+    return render_template("/bodyParts/chest.html", user=current_user)
+@auth.route('/core', methods=['GET'])
+def core():
+    return render_template("/bodyParts/core.html", user=current_user)
+@auth.route('/legs', methods=['GET'])
+def legs():
+    return render_template("/bodyParts/legs.html", user=current_user)
+@auth.route('/shoulders', methods=['GET'])
+def shoulders():
+    return render_template("/bodyParts/shoulders.html", user=current_user)

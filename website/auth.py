@@ -93,3 +93,9 @@ def legs():
 @auth.route('/shoulders', methods=['GET'])
 def shoulders():
     return render_template("/bodyParts/shoulders.html", user=current_user)
+@auth.route('/neck', methods=['GET'])
+def neck():
+    return render_template("/bodyParts/neck.html", user=current_user)
+@auth.route('/glutes', methods=['GET'])
+def glutes():
+    return render_template("/bodyParts/glutes.html", user=current_user)

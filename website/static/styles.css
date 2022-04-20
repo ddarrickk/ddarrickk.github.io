@@ -130,7 +130,7 @@ nav{
 /* BODY.HTML CSS */
 
 body{
-    background: rgb(78, 78, 78);
+    background: rgb(26, 26, 26) ;
 }
 .wrapper{
     width: 1170px;
@@ -410,7 +410,7 @@ img.RShoulderBNWBack:hover{
 /* SIGNUP/LOGIN CSS */
 
 .form-container {
-    background-color: #202020;
+    background-color: rgb(26, 26, 26);
     padding: 4rem 0 4rem 0;
 }
 .loginregister {
@@ -478,9 +478,9 @@ img.RShoulderBNWBack:hover{
     background-color: rgb(42, 42, 42);
     background-size: cover;
     color: #FFF;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-right: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     padding-left: 0px;
 }
 
@@ -611,3 +611,16 @@ h1 {
     }
 }
 
+/* SIGN UP LINK */
+/* SIGN UP LINK */
+/* SIGN UP LINK */
+
+.signuplink {
+    text-decoration: none;
+    color:rgb(189, 234, 255);
+    font-size: 2vh;
+}
+
+.signuplinktext {
+    font-size: 2vh;
+}

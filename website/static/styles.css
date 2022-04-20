@@ -537,33 +537,77 @@ h1 {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
 }
-.specificMuscles {
+
+/* MUSCLE CSS */
+/* MUSCLE CSS */
+/* MUSCLE CSS */
+
+
+
+.muscle-container {
+    padding: 2rem 0 4rem 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
     font-weight: normal;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin-left: 70px;
-    font-size: xx-large;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
+    color: rgb(199, 199, 199);
+    font-size: 1rem;
 }
-.exercises{
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin-top: 3px;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    margin-left: 70px;
-}
-.exerciseSteps{
-    line-height: 1.2;
-    margin-top: 3px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    margin-left: 70px;
-    width: 20rem;
-    font-size: x-small;
+.muscle {
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
-  
+
+.muscle-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.muscle-heading h2{
+    line-height: 1.2;
+    margin-top: 3px;
+    font-size: 1.5vh;
+    text-align: left;
+    width: 15rem;
+    font-size: 3vh;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.muscle-heading h1{
+    line-height: 1.2;
+    margin-top: 3px;
+    font-size: 1.5vh;
+    text-align: left;
+    width: 27rem;
+}
+
+.muscle-heading a {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 2vh;
+    text-transform: uppercase;
+    margin-top: 3px;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .muscle {
+        height: 50vh;
+    }
+    .muscle-email-form {
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 820px) {
+    .muscle {
+        padding-top: 2rem;
+    }
+}
+

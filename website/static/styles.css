@@ -624,3 +624,80 @@ h1 {
 .signuplinktext {
     font-size: 2vh;
 }
+
+/* Workout Picker CSS */
+/* Workout Picker CSS */
+/* Workout Picker CSS */
+
+.greekCircle{
+    position:relative;
+    width:40vmin; height:40vmin;
+    margin:0 auto;
+    transition:transform .5s, opacity .5s;
+    }
+    .greekCircle a{
+    position:absolute ;
+    left:0; top:0;
+    width:80%; height:80%;
+    overflow:hidden;
+    background:#000000;
+    }
+    .greekCircle a div{
+    height:100%;
+    background-size:cover;
+    opacity:.5;
+    transition:opacity .5s;
+    }
+    .greekCircle 
+    a:nth-child(1), 
+    a:nth-child(2), 
+    a:nth-child(3), 
+    a:nth-child(4), 
+    a:nth-child(5){
+    border-radius: 5vmin 5vmin 5vmin 5vmin;
+    left:-50%;
+    }
+    .greekCircle a:nth-child(1) div{
+    background-image: url('/static/GreekGods/greekgod6.jpg');
+    }
+    .greekCircle a:nth-child(2){
+    left:-100%;
+    }
+    .greekCircle a:nth-child(2) div{
+    background-image: url('/static/GreekGods/greekgod2.jpg');
+    }
+    .greekCircle a:nth-child(3){
+    left:50%;
+    }
+    .greekCircle a:nth-child(3) div{
+    background-image: url('/static/GreekGods/greekgod4.jpg');
+    }
+    .greekCircle a:nth-child(4){
+    left:100%;
+    }
+    .greekCircle a:nth-child(4) div{
+    background-image: url('/static/GreekGods/greekgod3.jpg');
+    }
+    .greekCircle a:nth-child(5){
+      left: 0%
+    }
+    .greekCircle a:nth-child(5) div{
+    background-image: url('/static/GreekGods/greekgod1.jpg');
+    }
+    .greekCircle, .greekCircle:hover{
+    transform:scale(.8) translateZ(0px);
+    opacity:1;
+    }
+    .greekCircle a, .greekCircle:hover a{
+    transform:scale(1) translatez(0px);
+    }
+    .greekCircle a:hover div{
+    opacity:1;
+    }
+    .pillarLeft {
+    float: left;
+    }
+    .pillarRight {
+    float: right;
+    }
+      

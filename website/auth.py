@@ -72,6 +72,10 @@ def body():
 def about():
     return render_template("about.html", user=current_user)
 
+@auth.route('/workoutPicker', methods=['GET', 'POST'])
+def workoutPicker():
+    return render_template("workoutPicker.html", user=current_user)
+
 
 
 

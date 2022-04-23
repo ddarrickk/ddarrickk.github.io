@@ -8,6 +8,10 @@ from flask_login import login_user, login_required, logout_user, current_user
 auth = Blueprint('auth', __name__)
 
 
+# NAV 
+# NAV 
+# NAV 
+
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -77,7 +81,9 @@ def workoutPicker():
     return render_template("workoutPicker.html", user=current_user)
 
 
-
+# BODY PARTS
+# BODY PARTS
+# BODY PARTS
 
 @auth.route('/arms', methods=['GET'])
 def arms():
@@ -104,11 +110,38 @@ def neck():
 def glutes():
     return render_template("/bodyParts/glutes.html", user=current_user)
 
-
+# 4 WK 
+# 4 WK 
+# 4 WK 
 
 @auth.route('/4wk', methods=['GET'])
 def FourWk():
     return render_template("/workouts/4wk.html", user=current_user)
+
+@auth.route('/4wkDay1', methods=['GET'])
+def FourwkDay1():
+    return render_template("/workouts/4wk/4wkDay1.html", user=current_user)
+
+@auth.route('/4wkDay2', methods=['GET'])
+def FourwkDay2():
+    return render_template("/workouts/4wk/4wkDay2.html", user=current_user)
+
+@auth.route('/4wkDay3', methods=['GET'])
+def FourwkDay3():
+    return render_template("/workouts/4wk/4wkDay3.html", user=current_user)
+
+@auth.route('/4wkDay4', methods=['GET'])
+def FourwkDay4():
+    return render_template("/workouts/4wk/4wkDay4.html", user=current_user)
+
+@auth.route('/4wkDay5', methods=['GET'])
+def FourwkDay5():
+    return render_template("/workouts/4wk/4wkDay5.html", user=current_user)
+
+
+
+
+
 @auth.route('/5x5', methods=['GET'])
 def FiveXFive():
     return render_template("/workouts/5x5.html", user=current_user)

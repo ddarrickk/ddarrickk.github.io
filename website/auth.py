@@ -220,3 +220,13 @@ def pplday2():
 @auth.route('/pplday3', methods=['GET'])
 def pplday3():
     return render_template("/workouts/ppl/pplday3.html", user=current_user)
+
+
+#Rest and Terms
+@auth.route('/rest', methods=['GET'])
+def rest():
+    return render_template("/workouts/rest.html", user=current_user)
+    
+@auth.route('/terms', methods=['GET'])
+def terms():
+    return render_template("terms.html", user=current_user)

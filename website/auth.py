@@ -179,13 +179,30 @@ def Eightwkday4():
     return render_template("/workouts/8wk/8wkday4.html", user=current_user)
 
 
-
-
+# power 
+# power 
+# power 
 
 
 @auth.route('/power', methods=['GET'])
 def power():
     return render_template("/workouts/power.html", user=current_user)
+@auth.route('/powerday1', methods=['GET'])
+def powerday1():
+    return render_template("/workouts/power/powerday1.html", user=current_user)
+@auth.route('/powerday2', methods=['GET'])
+def powerday2():
+    return render_template("/workouts/power/powerday2.html", user=current_user)
+@auth.route('/powerday3', methods=['GET'])
+def powerday3():
+    return render_template("/workouts/power/powerday3.html", user=current_user)
+@auth.route('/powerday4', methods=['GET'])
+def powerday4():
+    return render_template("/workouts/power/powerday4.html", user=current_user)
+
+
+
+
 @auth.route('/ppl', methods=['GET'])
 def ppl():
     return render_template("/workouts/ppl.html", user=current_user)

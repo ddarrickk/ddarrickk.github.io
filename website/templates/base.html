@@ -8,7 +8,7 @@
   <link rel="stylesheet" type= "text/css" href="/static/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link href="https://www.dafontfree.net/embed/YmVybmFyZC1tdC1jb25kZW5zZWQtcmVndWxhciZkYXRhLzEzL2IvNjQ0NzkvQkVSTkhDLlRURg" rel="stylesheet" type="text/css"/>
-  <title>{% block title %}Notes{% endblock %}</title>
+  <title>{% block title %}About{% endblock %}</title>
 </head>
 
 <body>
@@ -16,9 +16,6 @@
       <img class="logoImg" src="/static/strengthLogo.png">
       <ul class="nav-links">
       {% if user.is_authenticated %}
-          <li>
-            <a id="notes" href="/">Notes</a>
-          </li>
           <li>
             <a id="about" href="/about">About</a>
           </li>
@@ -49,34 +46,20 @@
       </div>
   </nav>
   
-  {% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %} 
-    {% for message in messages %} 
-      <div>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+      <div class="displayMsg">
         {{ message }}
-        <button type="button" class="close" data-dismiss="alert">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-      <div>
+      {% else %}
+      <div class="displayMsg">
         {{ message }}
-        <button type="button" class="close" data-dismiss="alert">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-    {% endfor %} 
-  {% endif %} 
-  {% endwith %}
+      {% endif %} {% endfor %} {% endif %} {% endwith %}
 
   <script src="app.js"></script>
   <div class="container">{% block content %} {% endblock %}</div>
-  <script
-    type="text/javascript"
-    src="{{ url_for('static', filename='index.js') }}"
-  ></script>
   <script src="/static/app.js"></script>
 </body>
-
-
-
 </html>

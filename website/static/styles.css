@@ -10,6 +10,12 @@
     list-style: none;
 }
 
+.displayMsg {
+    color: white;
+    font-family: 'Poppins';
+    margin: 5px;
+}
+
 nav{
     display: flex;
     justify-content: space-around;

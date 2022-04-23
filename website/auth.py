@@ -140,11 +140,26 @@ def FourwkDay5():
 
 
 
-
+# 5x5 
+# 5x5 
+# 5x5 
 
 @auth.route('/5x5', methods=['GET'])
 def FiveXFive():
     return render_template("/workouts/5x5.html", user=current_user)
+
+@auth.route('/5x5day1', methods=['GET'])
+def FivexFiveday1():
+    return render_template("/workouts/5x5/5x5day1.html", user=current_user)
+
+@auth.route('/5x5day2', methods=['GET'])
+def FivexFiveday2():
+    return render_template("/workouts/5x5/5x5day2.html", user=current_user)
+
+
+
+
+
 @auth.route('/8wk', methods=['GET'])
 def Eightwk():
     return render_template("/workouts/8wk.html", user=current_user)

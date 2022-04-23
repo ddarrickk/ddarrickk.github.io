@@ -201,8 +201,22 @@ def powerday4():
     return render_template("/workouts/power/powerday4.html", user=current_user)
 
 
-
+# ppl 
+# ppl 
+# ppl 
 
 @auth.route('/ppl', methods=['GET'])
 def ppl():
     return render_template("/workouts/ppl.html", user=current_user)
+
+@auth.route('/pplday1', methods=['GET'])
+def pplday1():
+    return render_template("/workouts/ppl/pplday1.html", user=current_user)
+
+@auth.route('/pplday2', methods=['GET'])
+def pplday2():
+    return render_template("/workouts/ppl/pplday2.html", user=current_user)
+
+@auth.route('/pplday3', methods=['GET'])
+def pplday3():
+    return render_template("/workouts/ppl/pplday3.html", user=current_user)

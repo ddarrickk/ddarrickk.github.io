@@ -103,3 +103,21 @@ def neck():
 @auth.route('/glutes', methods=['GET'])
 def glutes():
     return render_template("/bodyParts/glutes.html", user=current_user)
+
+
+
+@auth.route('/4wk', methods=['GET'])
+def FourWk():
+    return render_template("/workouts/4wk.html", user=current_user)
+@auth.route('/5x5', methods=['GET'])
+def FiveXFive():
+    return render_template("/workouts/5x5.html", user=current_user)
+@auth.route('/8wk', methods=['GET'])
+def Eightwk():
+    return render_template("/workouts/8wk.html", user=current_user)
+@auth.route('/power', methods=['GET'])
+def power():
+    return render_template("/workouts/power.html", user=current_user)
+@auth.route('/ppl', methods=['GET'])
+def ppl():
+    return render_template("/workouts/ppl.html", user=current_user)

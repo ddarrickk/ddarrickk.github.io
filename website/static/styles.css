@@ -601,7 +601,7 @@ h1 {
     left:0; top:0;
     width:30%; height:30%;
     overflow:hidden;
-    background:#000000;
+    /* background:#000000; */
     }
     .greekCircle a div{
     height:100%;
@@ -609,16 +609,7 @@ h1 {
     opacity:.5;
     transition:opacity .5s;
     }
-    .greekCircle 
-    a:nth-child(1), 
-    a:nth-child(2), 
-    a:nth-child(3), 
-    a:nth-child(4), 
-    a:nth-child(5){
-    border-radius: 5vmin 5vmin 5vmin 5vmin;
-    }
-    
-  
+
     .greekCircle a:nth-child(1) div{
     background-image: url('/static/GreekGods/greekgod6.5.png');
     }
@@ -647,4 +638,95 @@ h1 {
     .pillarRight {
     float: right;
     }
-      
+
+/* WORKOUTS CSS */
+/* WORKOUTS CSS */
+/* WORKOUTS CSS */
+
+.greekCastle{
+    position:relative;
+    width:100vmin; height:100vmin;
+    margin:0 auto;
+    transition:transform .5s, opacity .5s;
+}
+.greekCastle a{
+    position:absolute;
+    left:0; top:0;
+    width:10%; height:10%;
+    overflow:hidden;
+    /* background:#000000; */
+}
+.greekCastle a div{
+    height:100%;
+    background-size:cover;
+    opacity:.5;
+    transition:opacity .5s;
+}
+.greekCastle a:nth-child(1){
+    top: 5%;
+    left: 15%;
+}
+.greekCastle a:nth-child(1) div{
+    background-image:url('RomanNumerals/1.png');
+}
+.greekCastle a:nth-child(2){
+    top: 5%;
+    left: 25%;
+}
+.greekCastle a:nth-child(2) div{
+    background-image:url('RomanNumerals/2.png');
+}
+.greekCastle a:nth-child(3){
+    top: 5%;
+    left: 35%;
+}
+.greekCastle a:nth-child(3) div{
+    background-image:url('RomanNumerals/3.png');
+}
+.greekCastle a:nth-child(4){
+    top: 5%;
+    left: 45%;
+}
+.greekCastle a:nth-child(4) div{
+    background-image: url('RomanNumerals/4.png');
+}
+.greekCastle a:nth-child(5){
+    top: 5%;
+    left: 55%;
+}
+.greekCastle a:nth-child(5) div{
+    background-image: url('RomanNumerals/5.png');
+}
+.greekCastle a:nth-child(6){
+    top: 5%;
+    left: 65%;
+}
+.greekCastle a:nth-child(6) div{
+    background-image: url('RomanNumerals/6.png');
+}
+.greekCastle a:nth-child(7){
+    top: 5%;
+    left: 75%;
+}
+.greekCastle a:nth-child(7) div{
+    background-image: url('RomanNumerals/7.png');
+}
+
+.greekCastle a:hover div{
+    opacity:1;
+    transform:translatez(0px);
+  }
+
+
+.headimg {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headtxt {
+    color: white;
+    float: center;
+}
